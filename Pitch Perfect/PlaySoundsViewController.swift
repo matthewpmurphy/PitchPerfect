@@ -22,7 +22,7 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //setup various audio players
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayerForEcho = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         for i in 0...N {
@@ -34,22 +34,28 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func playAudio(aRate: Float) {
+        //reset audio (avoid double playing)
         resetAudio()
+        //set time and rate
         audioPlayer.currentTime = 0.0
+        audioPlayer.enableRate = true
         audioPlayer.rate = aRate
-        audioPlayer.volume = 1.0
+        //Play audio
         audioPlayer.play()
     }
     
     @IBAction func playSlowAudio(sender: UIButton) {
-       playAudio(0.5)
+        //Play audio at half speed
+        playAudio(0.5)
     }
  
     @IBAction func playFastAudio(sender: UIButton) {
+        //play audio and 1.5x speed
         playAudio(1.5)
     }
     
     @IBAction func playReverbAudio(sender: UIButton) {
+        //reset audio and avoid double play
         resetAudio()
    
         var audioPlayerNode = AVAudioPlayerNode()
@@ -87,6 +93,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func resetAudio() {
+        //Stop and reset audio
         audioPlayer.stop()
         audioPlayerForEcho.stop()
         audioEngine.stop()
@@ -114,14 +121,17 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playChipmunkAudio(sender: UIButton) {
+        //play audio at a high pitch
         playAudioWithVariablePitch(1000)
     }
     
     @IBAction func playDarthVaderAudio(sender: UIButton) {
+        //play audio at a low pitch
         playAudioWithVariablePitch(-1000)
     }
     
     @IBAction func stopAudio(sender: UIButton) {
+        //stop and reset audio
         resetAudio()
     }
     
