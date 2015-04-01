@@ -215,20 +215,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1d8-CF-dLz" firstAttribute="top" secondItem="XUR-wP-YcW" secondAttribute="bottom" constant="50" id="1kO-vF-TgQ"/>
+                            <constraint firstItem="1d8-CF-dLz" firstAttribute="top" secondItem="XUR-wP-YcW" secondAttribute="bottom" constant="40" id="1kO-vF-TgQ"/>
                             <constraint firstItem="u7y-k2-Bpq" firstAttribute="leading" secondItem="qdM-2m-Res" secondAttribute="leadingMargin" constant="30" id="3zI-cT-qZd"/>
                             <constraint firstAttribute="centerX" secondItem="Hqe-8q-BA9" secondAttribute="centerX" id="6X5-Fd-YuR"/>
                             <constraint firstItem="u7y-k2-Bpq" firstAttribute="top" secondItem="FPJ-S2-7PT" secondAttribute="bottom" constant="66" id="FM1-Ue-8rV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="m3Z-4a-qAl" secondAttribute="trailing" constant="30" id="ILR-uU-PYC"/>
-                            <constraint firstItem="R4c-dt-MMk" firstAttribute="leading" secondItem="qdM-2m-Res" secondAttribute="leadingMargin" constant="40" id="JpI-ke-72Z"/>
-                            <constraint firstItem="R4c-dt-MMk" firstAttribute="top" secondItem="AaU-DZ-KlG" secondAttribute="bottom" constant="50" id="OnS-1v-JpU"/>
+                            <constraint firstItem="R4c-dt-MMk" firstAttribute="leading" secondItem="qdM-2m-Res" secondAttribute="leadingMargin" constant="30" id="JpI-ke-72Z"/>
+                            <constraint firstItem="R4c-dt-MMk" firstAttribute="top" secondItem="AaU-DZ-KlG" secondAttribute="bottom" constant="40" id="OnS-1v-JpU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XUR-wP-YcW" secondAttribute="trailing" constant="30" id="PFO-x7-QnM"/>
                             <constraint firstItem="AaU-DZ-KlG" firstAttribute="leading" secondItem="qdM-2m-Res" secondAttribute="leadingMargin" constant="30" id="S5u-tn-wh9"/>
                             <constraint firstItem="m3Z-4a-qAl" firstAttribute="top" secondItem="FPJ-S2-7PT" secondAttribute="bottom" constant="66" id="SZy-rV-KtG"/>
                             <constraint firstItem="JNe-o0-6Ew" firstAttribute="top" secondItem="Hqe-8q-BA9" secondAttribute="bottom" constant="102" id="Uh0-HY-1k9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1d8-CF-dLz" secondAttribute="trailing" constant="40" id="YCZ-Yi-waJ"/>
-                            <constraint firstItem="XUR-wP-YcW" firstAttribute="top" secondItem="m3Z-4a-qAl" secondAttribute="bottom" constant="50" id="YK7-5I-RKL"/>
-                            <constraint firstItem="AaU-DZ-KlG" firstAttribute="top" secondItem="u7y-k2-Bpq" secondAttribute="bottom" constant="50" id="YOT-EF-ahX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1d8-CF-dLz" secondAttribute="trailing" constant="30" id="YCZ-Yi-waJ"/>
+                            <constraint firstItem="XUR-wP-YcW" firstAttribute="top" secondItem="m3Z-4a-qAl" secondAttribute="bottom" constant="40" id="YK7-5I-RKL"/>
+                            <constraint firstItem="AaU-DZ-KlG" firstAttribute="top" secondItem="u7y-k2-Bpq" secondAttribute="bottom" constant="40" id="YOT-EF-ahX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -312,12 +312,12 @@
     <resources>
         <image name="chipmunk" width="100" height="100"/>
         <image name="darthvader" width="100" height="100"/>
-        <image name="echo" width="80" height="80"/>
+        <image name="echo" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="pause" width="50" height="50"/>
         <image name="rabbit" width="100" height="100"/>
         <image name="resume" width="50" height="50"/>
-        <image name="reverb" width="80" height="80"/>
+        <image name="reverb" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
